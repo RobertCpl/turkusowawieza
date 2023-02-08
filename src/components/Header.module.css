@@ -1,0 +1,27 @@
+.header {
+   max-width: 1200px;
+   margin: 0 auto;
+   /* background-color: rgba(218, 251, 240, 0.605); */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.hero {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.heading_primary {
+   font-size: 64px;
+   font-weight: 500;
+   line-height: 120%;
+   margin-bottom: 32px;
+}
+.heading_primary span {
+   display: block;
+}
+.heading_sub {
+   font-size: 22px;
+   line-height: 32px;
+   margin-bottom: 64px;
+}

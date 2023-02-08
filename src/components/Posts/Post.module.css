@@ -1,0 +1,28 @@
+.post {
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 8rem;
+}
+.postPhoto {
+   width: 45%;
+   /* height: 450px; */
+   border-radius: 50px;
+   overflow: hidden;
+}
+.postPhoto img {
+   width: 100%;
+}
+.postText {
+   width: 46%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   align-self: stretch;
+}
+.postTitle {
+   font-size: 2.5rem;
+   margin-bottom: 24px;
+}

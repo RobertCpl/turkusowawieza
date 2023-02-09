@@ -1,6 +1,6 @@
-import Logo from "./../../assets/images/Logo.svg";
+import Logo from "./../assets/images/Logo.svg";
 import style from "./Navigation.module.css";
-import Burger from "./Burger";
+import Burger from "../components/Burger";
 
 function Navigation() {
    return (

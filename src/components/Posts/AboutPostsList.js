@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import style from "./PostsList.module.css";
+import style from "./AboutPostsList.module.css";
 
-import Post from "./Post";
+import Post from "./AboutPost";
 
-function PostsList() {
+function AboutPostsList() {
    const [posts, setPosts] = useState([]);
 
    useEffect(() => {
       async function getPosts() {
-         const response = await fetch("http://nowa.turkusowawieza.pl/wp-json/wp/v2/posts?order=asc");
+         const response = await fetch("https://nowa.turkusowawieza.pl/wp-json/wp/v2/posts?categories=3&order=asc");
          const data = await response.json();
          setPosts(data);
       }
@@ -30,6 +30,6 @@ function PostsList() {
          );
       }
    });
-   return <section className={style.aboutus}>{post}</section>;
+   return <div className={style.aboutus}>{post}</div>;
 }
-export default PostsList;
+export default AboutPostsList;

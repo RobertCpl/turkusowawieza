@@ -1,7 +1,7 @@
 import style from "./Header.module.css";
 import tree from "./../assets/images/Tree.jpg";
-import Button from "./Button";
-import ButtonSecondary from "./ButtonSecondary";
+import Button from "../components/Button";
+import ButtonSecondary from "./../components/ButtonSecondary";
 function Header() {
    return (
       <header className={style.header}>

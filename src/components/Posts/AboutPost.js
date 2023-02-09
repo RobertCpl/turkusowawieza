@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import style from "./Post.module.css";
+import style from "./AboutPost.module.css";
 
 function Post(props) {
    const [img, setImg] = useState({ datas: {}, isLoaded: false });
@@ -20,7 +20,7 @@ function Post(props) {
          ) : (
             <>
                <div className={style.postPhoto}>
-                  <img src={img.datas.media_details.sizes.medium_large.source_url} alt="" className={style.img} />
+                  <img src={img.datas.media_details.sizes.full.source_url} alt="" className={style.img} />
                </div>
                <div className={style.postText}>
                   <h3 className={style.postTitle}>{title.rendered}</h3>

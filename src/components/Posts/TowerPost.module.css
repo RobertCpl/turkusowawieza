@@ -1,0 +1,24 @@
+.post {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.leftColumn {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   align-self: stretch;
+}
+
+.title {
+   font-size: 1.75rem;
+   font-weight: 500;
+   margin-bottom: 1.5rem;
+}

@@ -1,5 +1,5 @@
-import burger from "./../../assets/images/Menu.svg";
-import close from "./../../assets/images/Close.svg";
+import burger from "./../assets/images/Menu.svg";
+import close from "./../assets/images/Close.svg";
 import style from "./Burger.module.css";
 import { useState } from "react";
 function Burger() {

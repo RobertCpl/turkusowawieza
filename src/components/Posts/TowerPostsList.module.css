@@ -1,6 +1,6 @@
 .list_posts {
-   width: 50rem;
-   height: 260px;
+   max-width: 60rem;
+   height: 24.25rem;
    margin: 0 auto;
 
    position: relative;

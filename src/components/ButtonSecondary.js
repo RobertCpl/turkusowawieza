@@ -1,9 +1,9 @@
-import style from "./Button.module.css";
+import style from "./ButtonSecondary.module.css";
 
 function ButtonSecondary(props) {
    console.log(props);
    return (
-      <a href="#" className={style.buttonClear} style={{ margin: props.margin }}>
+      <a href="#" className={style.button} style={{ margin: props.margin }}>
          <span>{props.title}</span>
       </a>
    );

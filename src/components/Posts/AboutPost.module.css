@@ -5,6 +5,9 @@
    align-items: center;
    margin-bottom: 8rem;
 }
+.post:nth-last-child(1) {
+   margin-bottom: 0;
+}
 .postPhoto {
    width: 45%;
    /* height: 450px; */

@@ -5,14 +5,7 @@
    background-color: rgba(0, 179, 181, 1);
    color: white;
 }
-.buttonClear {
-   display: inline-block;
-   padding: 1rem 2rem;
-   border-radius: 50px;
-   background-color: transparent;
-   color: rgba(44, 46, 49, 0.75);
-   border: 1px solid rgba(44, 46, 49, 0.25);
-}
+
 .button span {
    display: inline-block;
 }

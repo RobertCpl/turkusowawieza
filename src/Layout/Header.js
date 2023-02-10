@@ -18,7 +18,7 @@ function Header() {
             </div>
          </div>
          <div className="tree">
-            <img src={tree} alt="" />
+            <img src={tree} alt="tree" />
          </div>
       </header>
    );

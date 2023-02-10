@@ -20,7 +20,7 @@ function Post(props) {
          ) : (
             <>
                <div className={style.postPhoto}>
-                  <img src={img.datas.media_details.sizes.full.source_url} alt="" className={style.img} />
+                  <img src={img.datas.media_details.sizes.medium_large.source_url} alt="" className={style.img} />
                </div>
                <div className={style.postText}>
                   <h3 className={style.postTitle}>{title.rendered}</h3>

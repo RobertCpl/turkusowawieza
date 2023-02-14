@@ -1,0 +1,15 @@
+.wraper {
+   text-align: center;
+}
+
+.title {
+   font-size: 1.75rem;
+   font-weight: 500;
+   margin-bottom: 1.5rem;
+}
+.items {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(./../../assets/images/line.svg);
+}

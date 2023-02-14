@@ -1,0 +1,15 @@
+.wraper {
+   max-width: 60rem;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.icon {
+   width: 8.75rem;
+   height: 8.75;
+   border-radius: 50%;
+   border: 1px solid rgba(0, 179, 181, 0.2);
+   padding: 3.37rem;
+}

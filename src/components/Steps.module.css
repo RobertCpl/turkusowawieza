@@ -1,0 +1,27 @@
+.wraper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 25rem;
+   margin: 0 auto;
+}
+.step {
+   width: 1.6rem;
+   height: 1.6rem;
+   background-image: url(./../assets/images/ringWhite.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.stepActive {
+   width: 3rem;
+   height: 3rem;
+   background-image: url(./../assets/images/stepActive.png);
+   background-position: center;
+   background-size: contain;
+}
+.border {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

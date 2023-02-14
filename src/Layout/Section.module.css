@@ -7,3 +7,6 @@ section {
    text-align: center;
    margin-bottom: 4rem;
 }
+section span {
+   display: block;
+}

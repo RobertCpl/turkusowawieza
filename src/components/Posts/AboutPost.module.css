@@ -1,4 +1,4 @@
-.post {
+.wraper {
    max-width: 1200px;
    display: flex;
    justify-content: space-between;
@@ -6,11 +6,11 @@
    flex-wrap: wrap;
    margin-bottom: 8rem;
 }
-.post:nth-last-child(1) {
+.wraper:nth-last-child(1) {
    margin-bottom: 0;
 }
-.postPhoto {
-   min-width: 25rem;
+.photo {
+   min-width: 25nprem;
    max-width: 45%;
    /* height: 44550px; */
    border-radius: 50px;
@@ -19,7 +19,7 @@
 .postPhoto img {
    width: 100%;
 }
-.postText {
+.box {
    width: 46%;
    display: flex;
    flex-direction: column;
@@ -27,8 +27,11 @@
    align-items: flex-start;
    align-self: stretch;
 }
-.postTitle {
+.title {
    font-weight: 600;
    font-size: 2.5rem;
    margin-bottom: 24px;
+}
+.text {
+   line-height: 32px;
 }

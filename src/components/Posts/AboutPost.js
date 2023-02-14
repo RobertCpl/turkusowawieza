@@ -14,17 +14,17 @@ function Post(props) {
    }, []);
 
    return (
-      <div className={style.post} style={{ flexDirection: props.reverse }}>
+      <div className={style.wraper} style={{ flexDirection: props.reverse }}>
          {!img.isLoaded ? (
             <p>Loading</p>
          ) : (
             <>
-               <div className={style.postPhoto}>
+               <div className={style.photo}>
                   <img src={img.datas.media_details.sizes.medium_large.source_url} alt="" className={style.img} />
                </div>
-               <div className={style.postText}>
-                  <h3 className={style.postTitle}>{title.rendered}</h3>
-                  <div className={style.content} dangerouslySetInnerHTML={{ __html: content.rendered }}></div>
+               <div className={style.box}>
+                  <h3 className={style.title}>{title.rendered}</h3>
+                  <div className={style.text} dangerouslySetInnerHTML={{ __html: content.rendered }}></div>
                </div>
             </>
          )}

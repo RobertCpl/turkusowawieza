@@ -1,0 +1,32 @@
+.item {
+   padding: 0.75rem 3rem;
+   border-radius: 1rem;
+   color: white;
+}
+
+.item:nth-child(1) {
+   transform-origin: left;
+   transform: rotate(357deg);
+}
+.item:nth-child(2) {
+   transform-origin: left;
+   transform: rotate(1deg);
+}
+.item:nth-child(3) {
+   transform-origin: left;
+   transform: rotate(358deg);
+}
+.item:nth-child(4) {
+   transform-origin: left;
+   transform: rotate(2deg);
+   margin-bottom: 0.5rem;
+}
+.item:nth-child(5) {
+   transform-origin: left;
+   transform: rotate(359deg);
+   margin-bottom: 0.5rem;
+}
+.item:nth-child(6) {
+   transform-origin: right;
+   transform: rotate(5deg);
+}

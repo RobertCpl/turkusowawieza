@@ -1,9 +1,11 @@
 .wraper {
    max-width: 1200px;
+
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 5rem;
 }
 .arrowLeft {
    width: 6rem;
@@ -14,6 +16,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.text {
+   width: 37rem;
+   height: 17rem;
+   position: relative;
 }
 .arrowRight {
    width: 6rem;

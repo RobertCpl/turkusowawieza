@@ -7,6 +7,11 @@ import TowerPostsList from "./components/Posts/TowerPostsList";
 import Wraper from "./Layout/Wraper";
 import ButtonInspiration from "./components/ButtonInspiration";
 import RecruitmentList from "./components/Posts/RecruitmentList";
+import DayWraper from "./Layout/DayPlan/DayWraper";
+import JoinUs from "./Layout/JoinUs/JoinUs";
+import JobOfertList from "./components/Posts/JobOfertList";
+import Mariusz from "./Layout/World/Mariusz";
+import Circle from "./Layout/World/Circle";
 
 function App() {
    return (
@@ -72,7 +77,9 @@ function App() {
          <Section className={"actions"} color={"rgba(0, 179, 181, 0.07)"} title={"Jak działamy"} pad={"128px 0"}>
             <TowerPostsList />
          </Section>
-         <Section className={"plan"} title={"Przykładowy plan dnia w Turkusowej Wieży"} pad={"128px 0"}></Section>
+         <Section className={"plan"} title={"Przykładowy plan dnia"} title2={"w Turkusowej Wieży"} pad={"128px 0"}>
+            <DayWraper />
+         </Section>
          <Section className={"team"} title={"Nasza kadra jest wspaniała"} pad={"128px 0"}></Section>
          <Section
             className={"recruitment"}
@@ -81,6 +88,14 @@ function App() {
             pad={"128px 0"}
          >
             <RecruitmentList />
+         </Section>
+         <Section className={"joinus"} title={"Dołącz do nas"} pad={"128px 0"}>
+            <JoinUs />
+            <JobOfertList />
+         </Section>
+         <Section className={"world"} title={"Zmieniamy świat"} pad={"128px 0"}>
+            <Mariusz />
+            <Circle />
          </Section>
       </div>
    );

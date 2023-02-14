@@ -1,0 +1,108 @@
+.wraper {
+   display: flex;
+   max-width: 1200px;
+   height: 1000px;
+   margin: 0 auto;
+   overflow: hidden;
+   /* border: 1px solid black; */
+
+   position: relative;
+}
+.left {
+   width: 50%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translate(25%);
+
+   /* background-color: rgba(0, 255, 255, 0.192); */
+}
+.circleL1 {
+   position: absolute;
+   right: 0;
+
+   width: 1000px;
+   height: 1000px;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+}
+.circleL2 {
+   width: 716px;
+   height: 716px;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+}
+.circleL3 {
+   width: 434px;
+   height: 434px;
+   border-radius: 50%;
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+}
+.right {
+   width: 50%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translateX(-25%);
+}
+.circleR1 {
+   position: absolute;
+   left: 0;
+   width: 1000px;
+   height: 1000px;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: linear-gradient(to right, rgba(0, 179, 181, 0.15), rgba(0, 179, 181, 0) 70%, white);
+}
+.circleR2 {
+   width: 716px;
+   height: 716px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to right, rgba(0, 179, 181, 0.15), rgba(0, 179, 181, 0) 70%, white);
+}
+.circleR3 {
+   width: 434px;
+   height: 434px;
+   border-radius: 50%;
+
+   background: linear-gradient(to right, rgba(0, 179, 181, 0.15), rgba(0, 179, 181, 0) 70%, white);
+}
+.box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   z-index: 2;
+   margin: 0 auto;
+}
+.paragrafOne {
+   max-width: 30rem;
+   text-align: center;
+   line-height: 32px;
+}
+.icon {
+   padding: 2rem;
+}
+.paragrafTwo {
+   max-width: 30rem;
+   text-align: center;
+   line-height: 32px;
+}

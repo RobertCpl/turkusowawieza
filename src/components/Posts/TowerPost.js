@@ -15,15 +15,15 @@ function TowerPost(props) {
    }, []);
 
    return (
-      <div className={style.post}>
+      <div className={style.wraper}>
          {!img.isLoaded ? (
             <p>Loading</p>
          ) : (
             <>
                <div className={style.leftColumn}>
-                  <div className={style.box}>
+                  <div>
                      <h3 className={style.title}>{title.rendered}</h3>
-                     <div className={style.excerpt} dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
+                     <div className={style.text} dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
                   </div>
                   <Button title={"Dowiedź się wiecej"} />
                </div>

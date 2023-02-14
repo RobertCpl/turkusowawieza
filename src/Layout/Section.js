@@ -3,7 +3,12 @@ import style from "./Section.module.css";
 function Section(props) {
    return (
       <section className={props.className} style={{ backgroundColor: props.color, padding: props.pad }}>
-         {props.title ? <h2 className={style.title}>{props.title}</h2> : null}
+         {props.title ? (
+            <h2 className={style.title}>
+               {props.title}
+               {props.title2 ? <span>{props.title2}</span> : null}
+            </h2>
+         ) : null}
          {props.children}
          <ArrowScroll />
       </section>

@@ -9,7 +9,7 @@ function Navigation() {
             <div className={style.logo_img}>
                <img src={Logo} alt="logo" />
             </div>
-            <div>Turkusowa Wieża</div>
+            <div className={style.text}>Turkusowa Wieża</div>
          </div>
          <Burger />
       </nav>

@@ -19,7 +19,7 @@ function App() {
       <div className="container">
          <Navigation />
          <Header></Header>
-         <Section className={"aboutus"} color={"rgba(252, 252, 252, 1)"} pad={"128px 0"}>
+         {/* <Section className={"aboutus"} color={"rgba(252, 252, 252, 1)"} pad={"128px 0"}>
             <AboutPostsList />
          </Section>
          <Section className={"inspiration"} title={"Nasze inspiracje"} pad={"128px 0"}>
@@ -98,7 +98,7 @@ function App() {
             <Mariusz />
             <Circle />
          </Section>
-         <Footer />
+         <Footer /> */}
       </div>
    );
 }

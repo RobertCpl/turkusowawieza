@@ -12,12 +12,12 @@ function Header() {
                <span>samodzielnym</span>
             </h1>
             <span className={style.heading_sub}>Dając wolność uczymy odpowiedzialności.</span>
-            <div className="heroBtnBox">
-               <Button title={"Zgłoś się"} />
-               <ButtonSecondary title={"Jak działamy"} margin={"0rem 0 0 1rem"} />
+            <div className={style.buttons}>
+               <Button title={"Zgłoś się"} className={style.button} />
+               <ButtonSecondary title={"Jak działamy"} />
             </div>
          </div>
-         <div className="tree">
+         <div className={style.tree}>
             <img src={tree} alt="tree" />
          </div>
       </header>

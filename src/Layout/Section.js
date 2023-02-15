@@ -7,6 +7,7 @@ function Section(props) {
             <h2 className={style.title}>
                {props.title}
                {props.title2 ? <span>{props.title2}</span> : null}
+               <div className={style.decor}></div>
             </h2>
          ) : null}
          {props.children}

@@ -3,7 +3,7 @@ import arrowR from "./../../assets/images/arrowRight.svg";
 import style from "./RecruitmentList.module.css";
 import RecruitmentPost from "./RecruitmentPost";
 import Steps from "./../Steps";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const posts = [
    {
@@ -37,48 +37,36 @@ function RecruitmentList() {
    const text = useRef(null);
    const step = useRef([]);
 
-   const [borders, setActiveBorder] = useState([]);
-   let [index, setIndex] = useState(1);
+   let [curentIndex, setCurenIndex] = useState(0);
 
-   useEffect(() => {
-      setActiveBorder(Array.from(step.current.childNodes));
-   }, []);
+   const post = posts.map((post, index) => {
+      if (curentIndex === index) {
+         return <RecruitmentPost key={post.id} title={post.title} text={post.text} />;
+      }
+   });
 
    function RightClickHandler() {
-      // const steps = borders.map((border) => border.firstElementChild);
-
-      // console.log(index);
-      console.log(borders);
-
-      // if (index <= steps.length - 1) {
-      //    borders[index].classList.add("stepActive");
-      //    steps[index].classList.add("stepVisited");
-      //    if (index !== 0) {
-      //       borders[index - 1].classList.remove("stepActive");
-      //    }
-
-      //    descriptions.forEach((description, indexDescription, descriptions) => {
-      //       if (index == indexDescription) {
-      //          description.classList.add("joinus__description-active");
-
-      //          descriptions[indexDescription - 1].classList.remove("joinus__description-active");
-      //       }
-      //    });
-      //    setIndex(index++);
-      // } else if (index == steps.length) {
-      //    return;
-      // }
+      if (curentIndex >= posts.length - 1) {
+         return;
+      }
+      setCurenIndex(++curentIndex);
+      console.log(curentIndex);
+   }
+   function LeftClickHandler() {
+      if (curentIndex <= 0) {
+         return;
+      }
+      setCurenIndex(--curentIndex);
+      console.log(curentIndex);
    }
    return (
       <>
          <div className={style.wraper}>
-            <div className={style.arrowLeft}>
+            <div className={style.arrowLeft} onClick={LeftClickHandler}>
                <img src={arrowL} alt="arrow left" />
             </div>
             <div className={style.text} ref={text}>
-               {posts.map((post) => (
-                  <RecruitmentPost key={post.id} title={post.title} text={post.text} />
-               ))}
+               {post}
             </div>
             <div className={style.arrowRight} onClick={RightClickHandler}>
                <img src={arrowR} alt="arrow right" />

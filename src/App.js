@@ -12,6 +12,7 @@ import JoinUs from "./Layout/JoinUs/JoinUs";
 import JobOfertList from "./components/Posts/JobOfertList";
 import Mariusz from "./Layout/World/Mariusz";
 import Circle from "./Layout/World/Circle";
+import Footer from "./Layout/Footer";
 
 function App() {
    return (
@@ -97,6 +98,7 @@ function App() {
             <Mariusz />
             <Circle />
          </Section>
+         <Footer />
       </div>
    );
 }

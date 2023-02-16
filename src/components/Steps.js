@@ -1,9 +1,8 @@
-import { forwardRef } from "react";
 import style from "./Steps.module.css";
 
-const Steps = forwardRef(({}, steps) => {
+function Steps() {
    return (
-      <div className={style.wraper} ref={steps}>
+      <div className={style.wraper}>
          <div className={`${style.border} ${style.stepActive}`}>
             <div className={style.step}></div>
          </div>
@@ -21,5 +20,5 @@ const Steps = forwardRef(({}, steps) => {
          </div>
       </div>
    );
-});
+}
 export default Steps;

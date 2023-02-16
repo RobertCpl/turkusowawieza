@@ -1,13 +1,16 @@
-import arrow from "./../assets/images/button-arrow.svg";
+import arrowSvg from "./../assets/images/button-arrow.svg";
 import style from "./Button.module.css";
 
 function Button(props) {
+   const arrow = props.notArrow ? null : (
+      <span className={style.arrow}>
+         <img src={arrowSvg} alt="arrow" />
+      </span>
+   );
    return (
-      <a href="#" className={style.button}>
+      <a href="#" className={style.button} style={{ fontSize: props.fontSize }}>
          <span>{props.title}</span>
-         <span>
-            <img src={arrow} alt="arrow" />
-         </span>
+         {arrow}
       </a>
    );
 }

@@ -3,7 +3,7 @@ import arrowR from "./../../assets/images/arrowRight.svg";
 import style from "./RecruitmentList.module.css";
 import RecruitmentPost from "./RecruitmentPost";
 import Steps from "./../Steps";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const posts = [
    {
@@ -33,10 +33,7 @@ const posts = [
    },
 ];
 
-function RecruitmentList() {
-   const text = useRef(null);
-   const step = useRef([]);
-
+function RecruitmentList(props) {
    let [curentIndex, setCurenIndex] = useState(0);
 
    const post = posts.map((post, index) => {
@@ -50,14 +47,12 @@ function RecruitmentList() {
          return;
       }
       setCurenIndex(++curentIndex);
-      console.log(curentIndex);
    }
    function LeftClickHandler() {
       if (curentIndex <= 0) {
          return;
       }
       setCurenIndex(--curentIndex);
-      console.log(curentIndex);
    }
    return (
       <>
@@ -65,14 +60,15 @@ function RecruitmentList() {
             <div className={style.arrowLeft} onClick={LeftClickHandler}>
                <img src={arrowL} alt="arrow left" />
             </div>
-            <div className={style.text} ref={text}>
-               {post}
-            </div>
+
+            <div className={style.text}>{post}</div>
+
             <div className={style.arrowRight} onClick={RightClickHandler}>
                <img src={arrowR} alt="arrow right" />
             </div>
          </div>
-         <Steps ref={step} />
+
+         {props.width > 768 ? <Steps /> : null}
       </>
    );
 }

@@ -15,7 +15,7 @@ function JobOfert() {
                   Warszawa <span>Żoliborz</span>
                </div>
             </div>
-            <Button title={"Zobacz ofertę"} />
+            <Button title={"Zobacz ofertę"} notArrow={1} fontSize={"14px"} />
          </div>
       </div>
    );

@@ -108,14 +108,18 @@ function App() {
          >
             <DayWraper />
          </Section>
-         {/* <Section className={"team"} title={"Nasza kadra jest wspaniała"} pad={"128px 0"}></Section>
+         <Section
+            className={"team"}
+            title={"Nasza kadra jest wspaniała"}
+            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+         ></Section>
          <Section
             className={"recruitment"}
             color={"rgba(0, 179, 181, 0.07)"}
             title={"Rekrutacja do Turkusowej Wieży"}
-            pad={"128px 0"}
+            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
          >
-            <RecruitmentList />
+            <RecruitmentList width={windowsWidth} />
          </Section>
          <Section className={"joinus"} title={"Dołącz do nas"} pad={"128px 0"}>
             <JoinUs />
@@ -125,7 +129,7 @@ function App() {
             <Mariusz />
             <Circle />
          </Section>
-         <Footer /> */}
+         <Footer />
       </div>
    );
 }

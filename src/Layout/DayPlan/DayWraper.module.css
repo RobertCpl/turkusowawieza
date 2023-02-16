@@ -3,7 +3,7 @@
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    flex-wrap: wrap;
 }
 .icon {
@@ -12,4 +12,22 @@
    border-radius: 50%;
    border: 1px solid rgba(0, 179, 181, 0.2);
    padding: 3.37rem;
+   align-self: center;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media (max-width: 768px) {
+   .wraper {
+      flex-direction: column;
+      align-items: center;
+   }
+   .icon {
+      display: none;
+   }
+   .wiktor {
+      margin-bottom: 4rem;
+   }
 }

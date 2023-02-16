@@ -5,6 +5,7 @@ function DayPlan(props) {
    return (
       <div className={style.wraper}>
          <h3 className={style.title}>{props.title}</h3>
+         <div className={style.sub}>{props.sub}</div>
          <div className={style.items}>{plan}</div>
       </div>
    );

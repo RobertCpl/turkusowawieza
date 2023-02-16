@@ -5,7 +5,9 @@
 .title {
    font-size: 1.75rem;
    font-weight: 500;
-   margin-bottom: 1.5rem;
+}
+.sub {
+   margin-bottom: 3rem;
 }
 .items {
    display: flex;

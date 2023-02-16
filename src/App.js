@@ -100,10 +100,15 @@ function App() {
          >
             <TowerPostsList />
          </Section>
-         {/* <Section className={"plan"} title={"Przykładowy plan dnia"} title2={"w Turkusowej Wieży"} pad={"128px 0"}>
+         <Section
+            className={"plan"}
+            title={"Przykładowy plan dnia"}
+            title2={"w Turkusowej Wieży"}
+            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+         >
             <DayWraper />
          </Section>
-         <Section className={"team"} title={"Nasza kadra jest wspaniała"} pad={"128px 0"}></Section>
+         {/* <Section className={"team"} title={"Nasza kadra jest wspaniała"} pad={"128px 0"}></Section>
          <Section
             className={"recruitment"}
             color={"rgba(0, 179, 181, 0.07)"}

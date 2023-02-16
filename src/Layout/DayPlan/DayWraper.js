@@ -40,12 +40,12 @@ const planKasia = [
    {
       id: 1,
       title: "Spotkanie mentorskie",
-      color: "rgba(0, 179, 181, 1)",
+      color: "rgba(85, 233, 137, 1)",
    },
    {
       id: 2,
       title: "Matematyka",
-      color: "rgba(85, 233, 137, 1)",
+      color: "rgba(54, 213, 215, 1)",
    },
    {
       id: 3,
@@ -55,15 +55,20 @@ const planKasia = [
    {
       id: 4,
       title: "Praca własna",
-      color: "rgba(58, 134, 255, 1)",
+      color: "rgba(79, 192, 255, 1)",
    },
    {
       id: 5,
       title: "RPG",
-      color: "rgba(0, 179, 181, 1)",
+      color: "rgba(165, 184, 255, 1)",
    },
    {
       id: 6,
+      title: "Malort",
+      color: "rgba(183, 126, 255, 1)",
+   },
+   {
+      id: 7,
       title: "Sport",
       color: "rgba(255, 186, 83, 1)",
    },
@@ -72,11 +77,15 @@ const planKasia = [
 function DayWraper() {
    return (
       <div className={style.wraper}>
-         <DayPlan title={"Wiktor z klasy 6"} plan={planWiktor} />
+         <div className={style.wiktor}>
+            <DayPlan title={"Wiktor z klasy 6"} sub={"Czwartek"} plan={planWiktor} />
+         </div>
          <div className={style.icon}>
             <img src={refresh} alt="refresh icon" />
          </div>
-         <DayPlan title={"Kasia z klasy 2"} plan={planKasia} />
+         <div className="kasia">
+            <DayPlan title={"Kasia z klasy 2"} sub={"Poniedziałek"} plan={planKasia} />
+         </div>
       </div>
    );
 }

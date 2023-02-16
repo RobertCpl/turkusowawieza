@@ -15,8 +15,10 @@ function TowerPostsList() {
       getPosts();
    }, []);
 
-   let post = towerPosts.map((post) => {
-      return <TowerPost key={post.id} title={post.title} excerpt={post.excerpt} media={post.featured_media} />;
+   let post = towerPosts.map((post, index) => {
+      if (index === 2) {
+         return <TowerPost key={post.id} title={post.title} excerpt={post.excerpt} media={post.featured_media} />;
+      }
    });
 
    return <div className={style.list_posts}>{post}</div>;

@@ -27,7 +27,7 @@ function TowerPost(props) {
                   </div>
                   <Button title={"Dowiedź się wiecej"} />
                </div>
-               <div className={style.righColumn}>
+               <div className={style.rightColumn}>
                   <div className={style.photo}>
                      <img src={img.datas.media_details.sizes.full.source_url} alt="" />
                   </div>

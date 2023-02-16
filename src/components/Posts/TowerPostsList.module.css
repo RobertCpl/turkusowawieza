@@ -1,7 +1,18 @@
 .list_posts {
    max-width: 60rem;
-   height: 24.25rem;
+   height: 24rem;
    margin: 0 auto;
 
    position: relative;
+}
+
+@media (max-width: 1024px) {
+   .list_posts {
+      max-width: 90%;
+   }
+}
+@media (max-width: 768px) {
+   .list_posts {
+      height: 45rem;
+   }
 }

@@ -3,6 +3,7 @@
    width: 100%;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
    padding: 4rem 6rem;
    background-color: white;
    border-radius: 1rem;
@@ -27,4 +28,43 @@
 }
 .text {
    line-height: 32px;
+   margin-bottom: 1rem;
+}
+
+.rightColumn {
+   width: 45%;
+   min-width: 253px;
+   text-align: right;
+}
+
+@media (max-width: 1024px) {
+   .wraper {
+      padding: 2rem;
+   }
+}
+@media (max-width: 768px) {
+   .wraper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .leftColumn {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      order: 2;
+   }
+   .text {
+      margin-bottom: 3rem;
+   }
+   .rightColumn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 3rem;
+   }
+}
+@media (max-width: 425px) {
+   .wraper {
+      padding: 1rem 0.5rem;
+   }
 }

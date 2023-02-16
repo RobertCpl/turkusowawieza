@@ -10,13 +10,11 @@
    margin-bottom: 0;
 }
 .photo {
-   min-width: 25nprem;
    max-width: 45%;
-   /* height: 44550px; */
    border-radius: 50px;
    overflow: hidden;
 }
-.postPhoto img {
+.photo img {
    width: 100%;
 }
 .box {
@@ -34,4 +32,24 @@
 }
 .text {
    line-height: 32px;
+}
+@media (max-width: 768px) {
+   .wraper {
+      flex-direction: column;
+      margin-bottom: 4rem;
+   }
+   .photo {
+      max-width: 100%;
+      margin-bottom: 3rem;
+   }
+
+   .box {
+      width: 100%;
+   }
+   .title {
+      font-size: 1.75rem;
+   }
+   .text {
+      font-size: 1rem;
+   }
 }

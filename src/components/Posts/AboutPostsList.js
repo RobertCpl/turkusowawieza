@@ -5,6 +5,7 @@ import Post from "./AboutPost";
 
 function AboutPostsList() {
    const [posts, setPosts] = useState([]);
+   const [windowsWidth, setWindowWidth] = useState(window.innerWidth);
 
    useEffect(() => {
       async function getPosts() {
@@ -14,6 +15,17 @@ function AboutPostsList() {
       }
       getPosts();
    }, []);
+
+   useEffect(() => {
+      const handleWindowResize = () => {
+         setWindowWidth(window.innerWidth);
+      };
+      window.addEventListener("resize", handleWindowResize);
+
+      return () => {
+         window.removeEventListener("resize", handleWindowResize);
+      };
+   });
 
    let post = posts.map((post, index) => {
       if (index % 2 === 0) {
@@ -25,7 +37,9 @@ function AboutPostsList() {
                title={post.title}
                content={post.content}
                media={post.featured_media}
-               reverse={"row-reverse"}
+               reverse={windowsWidth >= 768 ? "row-reverse" : "column-reverse"}
+               imgMargin={"0"}
+               textMargin={windowsWidth >= 768 ? null : "3rem"}
             />
          );
       }

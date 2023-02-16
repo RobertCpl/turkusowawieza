@@ -19,12 +19,16 @@ function Post(props) {
             <p>Loading</p>
          ) : (
             <>
-               <div className={style.photo}>
+               <div className={style.photo} style={{ marginBottom: props.imgMargin }}>
                   <img src={img.datas.media_details.sizes.medium_large.source_url} alt="" className={style.img} />
                </div>
                <div className={style.box}>
                   <h3 className={style.title}>{title.rendered}</h3>
-                  <div className={style.text} dangerouslySetInnerHTML={{ __html: content.rendered }}></div>
+                  <div
+                     className={style.text}
+                     style={{ marginBottom: props.textMargin }}
+                     dangerouslySetInnerHTML={{ __html: content.rendered }}
+                  ></div>
                </div>
             </>
          )}

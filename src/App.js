@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import "./App.css";
 import Navigation from "./Layout/Navigation";
 import Header from "./Layout/Header";
@@ -15,14 +17,29 @@ import Circle from "./Layout/World/Circle";
 import Footer from "./Layout/Footer";
 
 function App() {
+   const [windowsWidth, setWindowWidth] = useState(window.innerWidth);
+   useEffect(() => {
+      const handleWindowResize = () => {
+         setWindowWidth(window.innerWidth);
+      };
+      window.addEventListener("resize", handleWindowResize);
+
+      return () => {
+         window.removeEventListener("resize", handleWindowResize);
+      };
+   });
    return (
       <div className="container">
          <Navigation />
          <Header></Header>
-         {/* <Section className={"aboutus"} color={"rgba(252, 252, 252, 1)"} pad={"128px 0"}>
+         <Section
+            className={"aboutus"}
+            color={"rgba(252, 252, 252, 1)"}
+            pad={windowsWidth >= 768 ? "128px 0" : "64px 0"}
+         >
             <AboutPostsList />
          </Section>
-         <Section className={"inspiration"} title={"Nasze inspiracje"} pad={"128px 0"}>
+         {/* <Section className={"inspiration"} title={"Nasze inspiracje"} pad={"128px 0"}>
             <Wraper maxWidth={"1200px"}>
                <ButtonInspiration
                   title={"Maria Montessori"}

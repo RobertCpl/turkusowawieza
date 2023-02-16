@@ -35,64 +35,64 @@ function App() {
          <Section
             className={"aboutus"}
             color={"rgba(252, 252, 252, 1)"}
-            pad={windowsWidth >= 768 ? "128px 0" : "64px 0"}
+            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
          >
             <AboutPostsList />
          </Section>
-         {/* <Section className={"inspiration"} title={"Nasze inspiracje"} pad={"128px 0"}>
+         <Section className={"inspiration"} title={"Nasze inspiracje"} pad={windowsWidth > 768 ? "128px 0" : "64px 0"}>
             <Wraper maxWidth={"1200px"}>
                <ButtonInspiration
                   title={"Maria Montessori"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Turkusowe organizacje"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Agile Learning Center"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Porozumienie bez przemocy"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Jasper Jull"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Janusz Korczak"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
                <ButtonInspiration
                   title={"Robert Baden-Powell i skauting"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
-                  margin={"0 0 1.5rem 1.5rem"}
+                  margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
                   maxWidth={"24rem"}
                />
             </Wraper>
          </Section>
-         <Section className={"actions"} color={"rgba(0, 179, 181, 0.07)"} title={"Jak działamy"} pad={"128px 0"}>
+         {/* <Section className={"actions"} color={"rgba(0, 179, 181, 0.07)"} title={"Jak działamy"} pad={"128px 0"}>
             <TowerPostsList />
          </Section>
          <Section className={"plan"} title={"Przykładowy plan dnia"} title2={"w Turkusowej Wieży"} pad={"128px 0"}>

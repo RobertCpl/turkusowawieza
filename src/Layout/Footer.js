@@ -25,7 +25,7 @@ function Footer() {
             </div>
          </div>
          <div className={style.bottom}>
-            <div className={style.copy}>
+            <div className={style.left}>
                <div className={style.social}>
                   <div className={style.instagram}>
                      <img src={instagram} alt="instagram icon" />
@@ -34,12 +34,12 @@ function Footer() {
                      <img src={fb} alt="facebook icon" />
                   </div>
                </div>
-               <div>&copy; Turkusowa Wieża 2023</div>
+               <div className={style.copy}>&copy; Turkusowa Wieża 2023</div>
             </div>
-            <div className="earth">
+            <div className={style.earth}>
                <img src={earth} alt="planeta" />
             </div>
-            <div className={style.politic}>Polityka prywatności</div>
+            <div className={style.right}>Polityka prywatności</div>
          </div>
       </div>
    );

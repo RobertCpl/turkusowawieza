@@ -89,12 +89,11 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-wrap: wrap;
    z-index: 2;
    margin: 0 auto;
 }
 .paragrafOne {
-   max-width: 30rem;
+   max-width: 27rem;
    text-align: center;
    line-height: 32px;
 }
@@ -102,7 +101,28 @@
    padding: 2rem;
 }
 .paragrafTwo {
-   max-width: 30rem;
+   max-width: 27rem;
    text-align: center;
    line-height: 32px;
+}
+@media (max-width: 1024px) {
+   .paragrafOne {
+      max-width: 17rem;
+   }
+   .paragrafTwo {
+      max-width: 17rem;
+   }
+}
+@media (max-width: 768px) {
+   .box {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .paragrafOne {
+      max-width: 100%;
+   }
+   .paragrafTwo {
+      max-width: 100%;
+   }
 }

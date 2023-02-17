@@ -14,6 +14,7 @@
    font-weight: 400;
    line-height: 120%;
    position: relative;
+   align-self: flex-start;
 }
 .decor {
    width: 28rem;
@@ -65,25 +66,88 @@
    justify-content: space-between;
    flex-wrap: wrap;
 }
-.copy {
+.left {
    font-size: 14px;
    color: rgba(44, 46, 49, 0.75);
 
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: flex-start;
 }
+
 .social {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 2rem;
 }
 .facebook {
    margin-left: 1rem;
 }
-.politic {
+.copy {
+   margin-bottom: 2rem;
+}
+.earth img {
+   max-width: 100%;
+}
+.right {
    font-size: 14px;
    color: rgba(44, 46, 49, 0.75);
    align-self: flex-end;
+   margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+   .title {
+      font-size: 48px;
+   }
+   .decor {
+      width: 21rem;
+      top: 35px;
+   }
+   .earth {
+      width: 40%;
+   }
+
+   .earth img {
+      width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .top {
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      text-align: center;
+   }
+   .title {
+      align-self: center;
+      font-size: 1.75rem;
+      margin-bottom: 4rem;
+   }
+   .decor {
+      width: 12rem;
+      top: 20px;
+   }
+   .contact {
+      align-items: center;
+   }
+
+   .bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   /* .left {
+      order: 1; */
+   /* } */
+   .earth {
+      width: 100%;
+      margin-bottom: -5rem;
+      order: 3;
+   }
+   .right {
+      align-self: center;
+   }
 }

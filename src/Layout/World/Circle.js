@@ -33,7 +33,7 @@ function Circle() {
                <span>Fundusze fundacji pochodzą m.in. z 1,5% podatków przekazywanych przy rozliczaniu PIT-ów.</span>
                <span>
                   Prosimy, wesprzyj szkołę - przekaż 1,5% podatku na Fundację Społeczeństwo. Nr KRS: 0000346649 Pomóż
-                  nam tworzyć tę szkołę dla wszystkich.{" "}
+                  nam tworzyć tę szkołę dla wszystkich.
                </span>
             </p>
          </div>

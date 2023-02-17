@@ -3,4 +3,11 @@
    color: white;
    border-radius: 16px;
    font-weight: 700;
+   margin-bottom: 1.5rem;
+   width: 25rem;
+}
+@media (max-width: 425px) {
+   .button {
+      max-width: 18rem;
+   }
 }

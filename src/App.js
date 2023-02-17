@@ -6,6 +6,7 @@ import Header from "./Layout/Header";
 import Section from "./Layout/Section";
 import AboutPostsList from "./components/Posts/AboutPostsList";
 import TowerPostsList from "./components/Posts/TowerPostsList";
+import TeamList from "./components/Posts/TeamList";
 import Wraper from "./Layout/Wraper";
 import ButtonInspiration from "./components/ButtonInspiration";
 import RecruitmentList from "./components/Posts/RecruitmentList";
@@ -35,60 +36,65 @@ function App() {
          <Section
             className={"aboutus"}
             color={"rgba(252, 252, 252, 1)"}
-            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+            line={1}
          >
             <AboutPostsList />
          </Section>
-         <Section className={"inspiration"} title={"Nasze inspiracje"} pad={windowsWidth > 768 ? "128px 0" : "64px 0"}>
-            <Wraper maxWidth={"1200px"}>
+         <Section
+            className={"inspiration"}
+            title={"Nasze inspiracje"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+         >
+            <Wraper maxWidth={"960px"}>
                <ButtonInspiration
                   title={"Maria Montessori"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Turkusowe organizacje"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Agile Learning Center"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Porozumienie bez przemocy"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Jasper Jull"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Janusz Korczak"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
                <ButtonInspiration
                   title={"Robert Baden-Powell i skauting"}
                   color={"rgba(0, 179, 181, 1)"}
                   pad={"1rem 0"}
                   margin={windowsWidth > 768 ? "0 0 1.5rem 1.5rem" : "0 0 1.5rem 0 "}
-                  maxWidth={"24rem"}
+                  // maxWidth={"21rem"}
                />
             </Wraper>
          </Section>
@@ -96,7 +102,7 @@ function App() {
             className={"actions"}
             color={"rgba(0, 179, 181, 0.07)"}
             title={"Jak działamy"}
-            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
          >
             <TowerPostsList />
          </Section>
@@ -104,28 +110,41 @@ function App() {
             className={"plan"}
             title={"Przykładowy plan dnia"}
             title2={"w Turkusowej Wieży"}
-            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+            line={1}
          >
             <DayWraper />
          </Section>
          <Section
             className={"team"}
             title={"Nasza kadra jest wspaniała"}
-            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
-         ></Section>
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+         >
+            <TeamList />
+         </Section>
          <Section
             className={"recruitment"}
             color={"rgba(0, 179, 181, 0.07)"}
             title={"Rekrutacja do Turkusowej Wieży"}
-            pad={windowsWidth > 768 ? "128px 0" : "64px 0"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
          >
             <RecruitmentList width={windowsWidth} />
          </Section>
-         <Section className={"joinus"} title={"Dołącz do nas"} pad={"128px 0"}>
+         <Section
+            className={"joinus"}
+            title={"Dołącz do nas"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+            line={1}
+         >
             <JoinUs />
             <JobOfertList />
          </Section>
-         <Section className={"world"} title={"Zmieniamy świat"} pad={"128px 0"}>
+         <Section
+            className={"world"}
+            title={"Zmieniamy świat"}
+            pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+            line={1}
+         >
             <Mariusz />
             <Circle />
          </Section>

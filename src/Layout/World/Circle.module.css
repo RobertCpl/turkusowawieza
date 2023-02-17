@@ -30,7 +30,7 @@
    justify-content: center;
    align-items: center;
 
-   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.15), rgba(255, 253, 90, 0) 70%, white);
 }
 .circleL2 {
    width: 716px;
@@ -40,13 +40,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.15), rgba(255, 253, 90, 0) 70%, white);
 }
 .circleL3 {
    width: 434px;
    height: 434px;
    border-radius: 50%;
-   background: linear-gradient(to left, rgba(255, 253, 90, 0.25), rgba(255, 253, 90, 0) 70%, white);
+   background: linear-gradient(to left, rgba(255, 253, 90, 0.15), rgba(255, 253, 90, 0) 70%, white);
 }
 .right {
    width: 50%;

@@ -17,7 +17,15 @@ function TowerPostsList() {
 
    let post = towerPosts.map((post, index) => {
       if (index === 2) {
-         return <TowerPost key={post.id} title={post.title} excerpt={post.excerpt} media={post.featured_media} />;
+         return (
+            <TowerPost
+               key={post.id}
+               title={post.title}
+               excerpt={post.excerpt}
+               media={post.featured_media}
+               content={post.content}
+            />
+         );
       }
    });
 

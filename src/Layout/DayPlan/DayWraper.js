@@ -78,13 +78,13 @@ function DayWraper() {
    return (
       <div className={style.wraper}>
          <div className={style.wiktor}>
-            <DayPlan title={"Wiktor z klasy 6"} sub={"Czwartek"} plan={planWiktor} />
+            <DayPlan title={"Wiktor z klasy 6"} sub={"Plan we wtorek"} plan={planWiktor} />
          </div>
          <div className={style.icon}>
             <img src={refresh} alt="refresh icon" />
          </div>
          <div className="kasia">
-            <DayPlan title={"Kasia z klasy 2"} sub={"Poniedziałek"} plan={planKasia} />
+            <DayPlan title={"Kasia z klasy 2"} sub={"Plan na środe"} plan={planKasia} />
          </div>
       </div>
    );

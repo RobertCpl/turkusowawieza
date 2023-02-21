@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Team from "./Team";
 import style from "./TeamList.module.css";
 
-function TeamList() {
+function TeamList(props) {
    const [posts, setPosts] = useState([]);
    useEffect(() => {
       const getTeam = async () => {
@@ -14,7 +14,7 @@ function TeamList() {
    }, []);
 
    const persons = posts.map((person) => {
-      return <Team key={person.id} person={person} />;
+      return <Team key={person.id} person={person} top={props.top} />;
    });
    return <div className={style.wraper}>{persons}</div>;
 }

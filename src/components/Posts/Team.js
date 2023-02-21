@@ -43,7 +43,9 @@ function Team(props) {
 
    return (
       <>
-         {modalOpen ? <Modal title={title} content={content} img={photo} closeModal={closeModalHandler} /> : null}
+         {modalOpen ? (
+            <Modal title={title} content={content} img={photo} closeModal={closeModalHandler} top={props.top} />
+         ) : null}
          {person}
       </>
    );

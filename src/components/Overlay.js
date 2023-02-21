@@ -4,7 +4,7 @@ import close from "./../assets/images/Close.svg";
 
 function Overlay(props) {
    return (
-      <div className={style.wraper}>
+      <div className={style.wraper} style={{ top: props.top }}>
          <div className={style.close} onClick={props.closeModal}>
             <img src={close} alt="close" />
          </div>

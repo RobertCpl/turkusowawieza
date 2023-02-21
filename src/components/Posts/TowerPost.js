@@ -27,7 +27,9 @@ function TowerPost(props) {
 
    return (
       <div className={style.wraper}>
-         {modalOpen ? <Modal title={title} content={content} img={img} closeModal={closeModalHandler} /> : null}
+         {modalOpen ? (
+            <Modal title={title} content={content} img={img} closeModal={closeModalHandler} top={props.top} />
+         ) : null}
          {!img.isLoaded ? (
             <p>Loading</p>
          ) : (

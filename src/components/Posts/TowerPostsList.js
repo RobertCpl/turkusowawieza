@@ -3,7 +3,7 @@ import style from "./TowerPostsList.module.css";
 
 import TowerPost from "./TowerPost";
 
-function TowerPostsList() {
+function TowerPostsList(props) {
    const [towerPosts, setTowerPosts] = useState([]);
 
    useEffect(() => {
@@ -24,6 +24,7 @@ function TowerPostsList() {
                excerpt={post.excerpt}
                media={post.featured_media}
                content={post.content}
+               top={props.top}
             />
          );
       }

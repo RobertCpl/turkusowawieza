@@ -1,6 +1,6 @@
 .wraper {
-   position: fixed;
-   top: 50px;
+   position: absolute;
+   /* top: 0; */
    left: 50%;
    transform: translateX(-50%);
    width: 80vw;
@@ -54,10 +54,25 @@
    }
    .left {
       max-width: 100%;
+      order: 1;
+   }
+   .right {
+      width: 100%;
+      margin-bottom: 1.5rem;
+   }
+   .photo {
+      max-width: 128px;
    }
 }
 @media (max-width: 768px) {
    .wraper {
       width: 95vw;
+      top: 5px;
+      align-items: flex-start;
+      background-image: none;
+   }
+   .title {
+      font-size: 22px;
+      margin-bottom: 0.5rem;
    }
 }

@@ -12,6 +12,7 @@
 }
 .heading_primary {
    font-size: 64px;
+   color: #2c2e31;
    font-weight: 500;
    line-height: 120%;
    margin-bottom: 32px;
@@ -21,6 +22,7 @@
 }
 .heading_sub {
    font-size: 22px;
+   color: #616264;
    line-height: 32px;
    margin-bottom: 64px;
 }

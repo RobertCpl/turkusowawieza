@@ -2,7 +2,8 @@ import arrowL from "./../../assets/images/arrowLeft.svg";
 import arrowR from "./../../assets/images/arrowRight.svg";
 import style from "./RecruitmentList.module.css";
 import RecruitmentPost from "./RecruitmentPost";
-import Steps from "./../Steps";
+import Step from "./../Step";
+
 import { useState } from "react";
 
 const posts = [
@@ -35,6 +36,7 @@ const posts = [
 
 function RecruitmentList(props) {
    let [curentIndex, setCurenIndex] = useState(0);
+   const [widthFill, setWidthFill] = useState("");
 
    const post = posts.map((post, index) => {
       if (curentIndex === index) {
@@ -42,18 +44,44 @@ function RecruitmentList(props) {
       }
    });
 
+   const steps = posts.map((post, index) => {
+      return <Step index={index} curentIndex={curentIndex} />;
+   });
+
    function RightClickHandler() {
       if (curentIndex >= posts.length - 1) {
          return;
       }
+
       setCurenIndex(++curentIndex);
+      if (curentIndex === 1) {
+         setWidthFill("25%");
+      } else if (curentIndex === 2) {
+         setWidthFill("50%");
+      } else if (curentIndex === 3) {
+         setWidthFill("75%");
+      } else if (curentIndex === 4) {
+         setWidthFill("100%");
+      }
    }
    function LeftClickHandler() {
       if (curentIndex <= 0) {
          return;
       }
       setCurenIndex(--curentIndex);
+      if (curentIndex === 1) {
+         setWidthFill("25%");
+      } else if (curentIndex === 2) {
+         setWidthFill("50%");
+      } else if (curentIndex === 3) {
+         setWidthFill("75%");
+      } else if (curentIndex === 4) {
+         setWidthFill("100%");
+      } else if (curentIndex === 0) {
+         setWidthFill("0");
+      }
    }
+
    return (
       <>
          <div className={style.wraper}>
@@ -68,7 +96,14 @@ function RecruitmentList(props) {
             </div>
          </div>
 
-         {props.width > 768 ? <Steps /> : null}
+         {props.width > 768 ? (
+            <div className={style.steps}>
+               <div className={style.bar}>
+                  <div className={style.fill} style={{ width: widthFill }}></div>
+               </div>
+               {steps}
+            </div>
+         ) : null}
       </>
    );
 }

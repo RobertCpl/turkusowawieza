@@ -13,6 +13,7 @@
    font-size: 4rem;
    font-weight: 400;
    line-height: 120%;
+   color: #2c2e31;
    position: relative;
    align-self: flex-start;
 }
@@ -39,10 +40,11 @@
 }
 .phone {
    margin-bottom: 0.5rem;
+   color: #2c2e31;
 }
 .email {
    margin-bottom: 0.5rem;
-   color: black;
+   color: #2c2e31;
 }
 .copymail {
    background-color: rgba(0, 179, 181, 1);
@@ -82,8 +84,14 @@
    align-items: center;
    margin-top: 2rem;
 }
+.instagram:hover {
+   opacity: 0.5;
+}
 .facebook {
    margin-left: 1rem;
+}
+.facebook:hover {
+   opacity: 0.5;
 }
 .copy {
    margin-bottom: 2rem;

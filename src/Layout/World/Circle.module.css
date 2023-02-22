@@ -96,6 +96,7 @@
    max-width: 27rem;
    text-align: center;
    line-height: 32px;
+   color: #616264;
 }
 .icon {
    padding: 2rem;
@@ -104,6 +105,7 @@
    max-width: 27rem;
    text-align: center;
    line-height: 32px;
+   color: #616264;
 }
 @media (max-width: 1024px) {
    .paragrafOne {

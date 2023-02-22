@@ -20,11 +20,16 @@
 
 .paragrafOne {
    text-align: center;
+   color: #2c2e31;
    line-height: 32px;
    margin-bottom: 1rem;
 }
 .paragrafTwo {
    text-align: center;
+   color: #2c2e31;
    line-height: 32px;
    margin-bottom: 4rem;
+}
+.paragrafTwo a {
+   color: rgba(0, 179, 181, 1);
 }

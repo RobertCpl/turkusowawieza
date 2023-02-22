@@ -29,7 +29,9 @@ function AboutPostsList() {
 
    let post = posts.map((post, index) => {
       if (index % 2 === 0) {
-         return <Post key={post.id} title={post.title} content={post.content} media={post.featured_media} />;
+         return (
+            <Post key={post.id} title={post.title} content={post.content} media={post.featured_media} index={index} />
+         );
       } else {
          return (
             <Post

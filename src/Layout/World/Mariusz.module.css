@@ -14,10 +14,15 @@
 .title {
    margin-bottom: 1.5rem;
 }
+.sub {
+   color: #616264;
+}
 .name {
    font-size: 1.75rem;
    font-weight: 500;
+   color: #2c2e31;
 }
 .text {
    line-height: 32px;
+   color: #616264;
 }

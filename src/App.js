@@ -12,13 +12,14 @@ import ButtonInspiration from "./components/ButtonInspiration";
 import RecruitmentList from "./components/Posts/RecruitmentList";
 import DayWraper from "./Layout/DayPlan/DayWraper";
 import JoinUs from "./Layout/JoinUs/JoinUs";
-import JobOfertList from "./components/Posts/JobOfertList";
+// import JobOfertList from "./components/Posts/JobOfertList";
 import Mariusz from "./Layout/World/Mariusz";
 import Circle from "./Layout/World/Circle";
 import Footer from "./Layout/Footer";
 
 function App() {
    const [windowsWidth, setWindowWidth] = useState(window.innerWidth);
+
    useEffect(() => {
       const handleWindowResize = () => {
          setWindowWidth(window.innerWidth);
@@ -137,7 +138,7 @@ function App() {
             line={1}
          >
             <JoinUs />
-            <JobOfertList />
+            {/* <JobOfertList /> */}
          </Section>
          <Section
             className={"world"}

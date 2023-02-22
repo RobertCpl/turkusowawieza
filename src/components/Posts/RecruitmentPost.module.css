@@ -8,10 +8,12 @@
 .title {
    font-size: 1.75rem;
    font-weight: 500;
+   color: #2c2e31;
    margin-bottom: 1.5rem;
 }
 .text {
    line-height: 32px;
+   color: #616264;
 }
 
 /* @media (max-width: 1024px) {

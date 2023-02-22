@@ -1,0 +1,11 @@
+.circle {
+   position: absolute;
+   border-radius: 50%;
+   z-index: 3;
+}
+.circleGreen {
+   background: linear-gradient(to top, rgba(85, 233, 137, 1), rgba(0, 179, 181, 1));
+}
+.circleYellow {
+   background: linear-gradient(to top, rgba(85, 233, 137, 1), rgba(255, 253, 90, 1));
+}

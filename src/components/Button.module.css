@@ -8,6 +8,9 @@
    color: white;
 }
 
+.button:hover {
+   background-color: rgba(0, 141, 142, 1);
+}
 .arrow {
    display: block;
    width: 1.25rem;

@@ -4,10 +4,12 @@
 
 .title {
    font-size: 1.75rem;
+   color: #2c2e31;
    font-weight: 500;
 }
 .sub {
    margin-bottom: 3rem;
+   color: #616264;
 }
 .items {
    display: flex;

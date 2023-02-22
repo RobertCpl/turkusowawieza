@@ -1,9 +1,10 @@
 import { Fragment, useEffect, useState } from "react";
+import CirclePhoto from "../CirclePhoto";
 import style from "./AboutPost.module.css";
 
 function Post(props) {
    const [img, setImg] = useState({ datas: {}, isLoaded: false });
-   const { title, content, media } = props;
+   const { title, content, media, index } = props;
 
    useEffect(() => {
       fetch(`https://nowa.turkusowawieza.pl/wp-json/wp/v2/media/${media}`)
@@ -20,6 +21,7 @@ function Post(props) {
          ) : (
             <>
                <div className={style.photo} style={{ marginBottom: props.imgMargin }}>
+                  <CirclePhoto index={index} />
                   <img src={img.datas.media_details.sizes.medium_large.source_url} alt="" className={style.img} />
                </div>
                <div className={style.box}>

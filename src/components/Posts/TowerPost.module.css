@@ -23,11 +23,13 @@
 
 .title {
    font-size: 1.75rem;
+   color: #2c2e31;
    font-weight: 500;
    margin-bottom: 1.5rem;
 }
 .text {
    line-height: 32px;
+   color: #616264;
    margin-bottom: 1rem;
 }
 

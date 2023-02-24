@@ -13,7 +13,7 @@ function Header() {
             </h1>
             <span className={style.heading_sub}>Dając wolność uczymy odpowiedzialności.</span>
             <div className={style.buttons}>
-               <Button title={"Zgłoś się"} className={style.button} />
+               <Button title={"Zgłoś się"} className={style.button} to={"/kontakt"} />
                <ButtonSecondary title={"Jak działamy"} />
             </div>
          </div>

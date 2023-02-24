@@ -45,7 +45,7 @@ function RecruitmentList(props) {
    });
 
    const steps = posts.map((post, index) => {
-      return <Step index={index} curentIndex={curentIndex} />;
+      return <Step key={index} index={index} curentIndex={curentIndex} />;
    });
 
    function RightClickHandler() {

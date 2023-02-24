@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import instagram from "./../assets/images/instagram.svg";
 import fb from "./../assets/images/facebook.svg";
 import style from "./Footer.module.css";
@@ -39,7 +40,10 @@ function Footer() {
             <div className={style.earth}>
                <img src={earth} alt="planeta" />
             </div>
-            <div className={style.right}>Polityka prywatności</div>
+
+            <Link to={"/polityka-prywatnosci"} className={style.right}>
+               Polityka prywatności
+            </Link>
          </div>
       </div>
    );

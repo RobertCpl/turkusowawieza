@@ -10,7 +10,6 @@ function Section(props) {
    useEffect(() => {
       const handleScroll = () => {
          setTop(window.scrollY + sectionTop.current.getBoundingClientRect().top + 200);
-         console.log(top);
       };
 
       window.addEventListener("scroll", handleScroll);

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import style from "./TowerPostsList.module.css";
+import arrowL from "./../../assets/images/arrowLeft.svg";
+import arrowR from "./../../assets/images/arrowRight.svg";
 
 import TowerPost from "./TowerPost";
 
 function TowerPostsList(props) {
    const [towerPosts, setTowerPosts] = useState([]);
+   let [curentIndex, setCurenIndex] = useState(0);
 
    useEffect(() => {
       async function getPosts() {
@@ -15,8 +18,22 @@ function TowerPostsList(props) {
       getPosts();
    }, []);
 
+   function RightClickHandler() {
+      if (curentIndex >= towerPosts.length - 1) {
+         return;
+      }
+
+      setCurenIndex(++curentIndex);
+   }
+   function LeftClickHandler() {
+      if (curentIndex <= 0) {
+         return;
+      }
+      setCurenIndex(--curentIndex);
+   }
+
    let post = towerPosts.map((post, index) => {
-      if (index === 2) {
+      if (curentIndex === index) {
          return (
             <TowerPost
                key={post.id}
@@ -30,6 +47,16 @@ function TowerPostsList(props) {
       }
    });
 
-   return <div className={style.list_posts}>{post}</div>;
+   return (
+      <div className={style.wraper}>
+         <div className={style.arrowLeft} onClick={LeftClickHandler}>
+            <img src={arrowL} alt="arrow left" />
+         </div>
+         <div className={style.list_posts}>{post}</div>
+         <div className={style.arrowRight} onClick={RightClickHandler}>
+            <img src={arrowR} alt="arrow right" />
+         </div>
+      </div>
+   );
 }
 export default TowerPostsList;

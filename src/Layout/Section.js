@@ -10,6 +10,7 @@ function Section(props) {
    useEffect(() => {
       const handleScroll = () => {
          setTop(window.scrollY + sectionTop.current.getBoundingClientRect().top + 200);
+         return;
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -28,6 +29,7 @@ function Section(props) {
          className={props.className}
          style={{ backgroundColor: props.color, padding: props.pad }}
          ref={sectionTop}
+         id={props.id}
       >
          {props.line ? <div className={style.line}></div> : null}
          {props.title ? (

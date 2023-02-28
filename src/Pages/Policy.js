@@ -1,9 +1,9 @@
-import style from "./Polityka.module.css";
+import style from "./Policy.module.css";
 import arrowLink from "./../assets/images/arrowLink.svg";
 import { Link } from "react-router-dom";
 import Footer from "../Layout/Footer";
 
-function Polityka() {
+function Policy() {
    return (
       <>
          <div className={style.wraper}>
@@ -29,71 +29,64 @@ function Polityka() {
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Zbierane informacje</h3>
-               <p className={style.text}>
-                  Informacje są zbierane poprzez
-                  <br />
-                  <br />
-                  <ul>
-                     <li>wprowadzanie danych w formularzach kontaktowych i ankietach,</li>
-                     <li>zapisywanie w urządzeniach końcowych plików cookie – „ciasteczek”,</li>
-                     <li>gromadzenie logów serwera www przez operatora hostingowego.</li>
-                  </ul>
-               </p>
+               <p className={style.text}>Informacje są zbierane poprzez</p>
+               <ul className={style.list}>
+                  <li>wprowadzanie danych w formularzach kontaktowych i ankietach,</li>
+                  <li>zapisywanie w urządzeniach końcowych plików cookie – „ciasteczek”,</li>
+                  <li>gromadzenie logów serwera www przez operatora hostingowego.</li>
+               </ul>
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Cel i zakres zbierania danych</h3>
                <p className={style.text}>
                   Podstawą zbierania danych jest dobrowolne ich podanie przez użytkownika za pomocą formularzy
                   kontaktowych umieszczonych na stronie lub wiadomości email:
-                  <br />
-                  <br />
-                  <ul>
-                     <li>imię i nazwisko,</li>
-                     <li>imię dziecka,</li>
-                     <li>data urodzenia dziecka,</li>
-                     <li>adres email,</li>
-                     <li>nr telefonu,</li>
-                     <li>Informacje dot. powodów, dla których rodzic rozważa zapisanie dziecka do Turkusowej Wieży,</li>
-                     <li>Informacje nt. oczekiwań rodziców wobec szkoły i dziecka zapisanego do niej,</li>
-                     <li>Informacje nt. zapatrywań rodziców na kwestie kar, nagród i pochwał,</li>
-                     <li>
-                        Informacje jak ważne są dla rodzica określone nurty pedagogiczne (NVC, wartości Jespera Juula,
-                        pedagogika M. Montessori, edukacja demokratyczna),
-                     </li>
-                     <li>
-                        Innych informacji dot. dziecka, które mogą być istotne w kontekście zapisania ich do placówek
-                        prowadzonych przez Usługodawcę (czy dziecko ma diagnozę lub orzeczenie o potrzebie specjalnego
-                        kształcenia, czy bierze udział w terapii, jakie ma usposobienie, czy ma szczególne potrzeby
-                        rozwojowe),
-                     </li>
-                  </ul>
-                  <br />
+               </p>
+               <ul className={style.list}>
+                  <li>imię i nazwisko,</li>
+                  <li>imię dziecka,</li>
+                  <li>data urodzenia dziecka,</li>
+                  <li>adres email,</li>
+                  <li>nr telefonu,</li>
+                  <li>Informacje dot. powodów, dla których rodzic rozważa zapisanie dziecka do Turkusowej Wieży,</li>
+                  <li>Informacje nt. oczekiwań rodziców wobec szkoły i dziecka zapisanego do niej,</li>
+                  <li>Informacje nt. zapatrywań rodziców na kwestie kar, nagród i pochwał,</li>
+                  <li>
+                     Informacje jak ważne są dla rodzica określone nurty pedagogiczne (NVC, wartości Jespera Juula,
+                     pedagogika M. Montessori, edukacja demokratyczna),
+                  </li>
+                  <li>
+                     Innych informacji dot. dziecka, które mogą być istotne w kontekście zapisania ich do placówek
+                     prowadzonych przez Usługodawcę (czy dziecko ma diagnozę lub orzeczenie o potrzebie specjalnego
+                     kształcenia, czy bierze udział w terapii, jakie ma usposobienie, czy ma szczególne potrzeby
+                     rozwojowe),
+                  </li>
+               </ul>
+               <p className={style.text}>
                   Strona internetowa turkusowawieza.pl może zapisać ponadto informacje o parametrach połączenia
                   (oznaczenie czasu, adres IP).
                </p>
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Cel przetwarzania danych osobowych</h3>
-               <p className={style.text}>
-                  <ol>
-                     <li>
-                        Kontaktować się z Tobą w bieżących sprawach, w tym przedstawiania naszych usług i odpowiadania
-                        na Twoje pytania. Mamy prawnie uzasadniony interes polegający na możliwości bieżącego kontaktu z
-                        klientami i potencjalnymi klientami
-                     </li>
-                     <li>Sprawdzić dopasowanie naszych usług do Twoich potrzeb.</li>
-                     <li>
-                        Zapraszać Cię do uczestnictwa w naszych konferencjach, szkoleniach, przekazywać inne informacje
-                        o naszej działalności. Mamy prawnie uzasadniony interes polegający na możliwości bieżącego
-                        kontaktu z klientami i potencjalnymi klientami
-                     </li>
-                     <li>
-                        Bronić się przed ewentualnymi roszczeniami lub dochodzić ewentualnych roszczeń związanych z
-                        zawartą umową. Mamy prawnie uzasadniony interes polegający na możliwości obrony przed
-                        roszczeniami lub dochodzenia roszczeń.
-                     </li>
-                  </ol>
-               </p>
+               <ol className={style.list}>
+                  <li>
+                     Kontaktować się z Tobą w bieżących sprawach, w tym przedstawiania naszych usług i odpowiadania na
+                     Twoje pytania. Mamy prawnie uzasadniony interes polegający na możliwości bieżącego kontaktu z
+                     klientami i potencjalnymi klientami
+                  </li>
+                  <li>Sprawdzić dopasowanie naszych usług do Twoich potrzeb.</li>
+                  <li>
+                     Zapraszać Cię do uczestnictwa w naszych konferencjach, szkoleniach, przekazywać inne informacje o
+                     naszej działalności. Mamy prawnie uzasadniony interes polegający na możliwości bieżącego kontaktu z
+                     klientami i potencjalnymi klientami
+                  </li>
+                  <li>
+                     Bronić się przed ewentualnymi roszczeniami lub dochodzić ewentualnych roszczeń związanych z zawartą
+                     umową. Mamy prawnie uzasadniony interes polegający na możliwości obrony przed roszczeniami lub
+                     dochodzenia roszczeń.
+                  </li>
+               </ol>
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Okres przechowywania Twoich danych osobowych</h3>
@@ -113,16 +106,15 @@ function Polityka() {
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Twoje prawa związane z przetwarzaniem danych osobowych</h3>
+               <p className={style.text}>Masz następujące prawa:</p>
+               <ul className={style.list}>
+                  <li>wniesienia sprzeciwu wobec przetwarzania Twoich danych ze względu na szczególną sytuację,</li>
+                  <li>dostępu do Twoich danych osobowych,</li>
+                  <li>żądania sprostowania Twoich danych osobowych,</li>
+                  <li>żądania usunięcia Twoich danych osobowych,</li>
+                  <li>żądania ograniczenia przetwarzania Twoich danych osobowych.</li>
+               </ul>
                <p className={style.text}>
-                  Masz następujące prawa:
-                  <ul>
-                     <li>wniesienia sprzeciwu wobec przetwarzania Twoich danych ze względu na szczególną sytuację,</li>
-                     <li>dostępu do Twoich danych osobowych,</li>
-                     <li>żądania sprostowania Twoich danych osobowych,</li>
-                     <li>żądania usunięcia Twoich danych osobowych,</li>
-                     <li>żądania ograniczenia przetwarzania Twoich danych osobowych.</li>
-                  </ul>
-                  <br />
                   Aby skorzystać z powyższych praw, skontaktuj się z nami. Przysługuje Ci także prawo wniesienia skargi
                   do organu nadzorczego zajmującego się ochroną danych osobowych, tj. Prezesa Urzędu Ochrony Danych
                   Osobowych.
@@ -141,18 +133,16 @@ function Polityka() {
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Pliki cookies cele</h3>
+               <ul className={style.list}>
+                  <li>
+                     tworzenia statystyk, które pomagają zrozumieć, w jaki sposób korzystasz ze strony internetowej
+                  </li>
+                  <li>utrzymanie Twojej sesji,</li>
+                  <li>
+                     określania Twojego profilu w celu wyświetlania mu dopasowanych materiałów w sieciach reklamowych.
+                  </li>
+               </ul>
                <p className={style.text}>
-                  <ul>
-                     <li>
-                        tworzenia statystyk, które pomagają zrozumieć, w jaki sposób korzystasz ze strony internetowej
-                     </li>
-                     <li>utrzymanie Twojej sesji,</li>
-                     <li>
-                        określania Twojego profilu w celu wyświetlania mu dopasowanych materiałów w sieciach
-                        reklamowych.
-                     </li>
-                  </ul>
-                  <br />
                   Stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe”
                   (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu
                   końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia
@@ -175,37 +165,35 @@ function Polityka() {
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Logi serwera</h3>
-               <p className={style.text}>
-                  <ol>
-                     <li>
-                        Informacje o niektórych zachowaniach użytkowników podlegają logowaniu w warstwie serwerowej.
-                        Dane te są wykorzystywane w celu administrowania serwisem oraz w celu zapewnienia jak
-                        najbardziej sprawnej obsługi świadczonych usług hostingowych.
-                     </li>
-                     <li>
-                        Przeglądane zasoby identyfikowane są poprzez adresy URL. Ponadto zapisowi mogą podlegać:
-                        <ol className={style.listIn}>
-                           <li>czas nadejścia zapytania,</li>
-                           <li>czas wysłania odpowiedzi,</li>
-                           <li>nazwę stacji klienta – identyfikacja realizowana przez protokół HTTP,</li>
-                           <li>informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP,</li>
-                           <li>
-                              adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku,
-                              gdy przejście do Serwisu nastąpiło przez odnośnik,
-                           </li>
-                           <li>informacje o przeglądarce użytkownika,</li>
-                           <li>Informacje o adresie IP.</li>
-                        </ol>
-                     </li>
-                     <li>Dane powyższe nie są kojarzone z konkretnymi osobami przeglądającymi strony.</li>
-                     <li>Dane powyższe nie są wykorzystywane jedynie dla celów administrowania serwerem.</li>
-                     <li>
-                        Zebrane logi są przechowywane przez czas określony – 3 miesiące i służą jako materiał pomocniczy
-                        wykorzystywany do administrowania serwisem. Informacje w nich zawarte nie są ujawniane nikomu
-                        poza osobami upoważnionymi do Administrowania serwerem.
-                     </li>
-                  </ol>
-               </p>
+               <ol className={style.list}>
+                  <li>
+                     Informacje o niektórych zachowaniach użytkowników podlegają logowaniu w warstwie serwerowej. Dane
+                     te są wykorzystywane w celu administrowania serwisem oraz w celu zapewnienia jak najbardziej
+                     sprawnej obsługi świadczonych usług hostingowych.
+                  </li>
+                  <li>
+                     Przeglądane zasoby identyfikowane są poprzez adresy URL. Ponadto zapisowi mogą podlegać:
+                     <ol className={style.listIn}>
+                        <li>czas nadejścia zapytania,</li>
+                        <li>czas wysłania odpowiedzi,</li>
+                        <li>nazwę stacji klienta – identyfikacja realizowana przez protokół HTTP,</li>
+                        <li>informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP,</li>
+                        <li>
+                           adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku, gdy
+                           przejście do Serwisu nastąpiło przez odnośnik,
+                        </li>
+                        <li>informacje o przeglądarce użytkownika,</li>
+                        <li>Informacje o adresie IP.</li>
+                     </ol>
+                  </li>
+                  <li>Dane powyższe nie są kojarzone z konkretnymi osobami przeglądającymi strony.</li>
+                  <li>Dane powyższe nie są wykorzystywane jedynie dla celów administrowania serwerem.</li>
+                  <li>
+                     Zebrane logi są przechowywane przez czas określony – 3 miesiące i służą jako materiał pomocniczy
+                     wykorzystywany do administrowania serwisem. Informacje w nich zawarte nie są ujawniane nikomu poza
+                     osobami upoważnionymi do Administrowania serwerem.
+                  </li>
+               </ol>
             </div>
             <div className={style.textWraper}>
                <h3 className={style.sub}>Zarządzanie plikami cookies</h3>
@@ -221,4 +209,4 @@ function Polityka() {
       </>
    );
 }
-export default Polityka;
+export default Policy;

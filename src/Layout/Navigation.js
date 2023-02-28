@@ -2,7 +2,7 @@ import Logo from "./../assets/images/Logo.svg";
 import style from "./Navigation.module.css";
 import Burger from "../components/Burger";
 
-function Navigation() {
+function Navigation(props) {
    return (
       <nav className={style.nav}>
          <div className={style.logo}>
@@ -11,7 +11,7 @@ function Navigation() {
             </div>
             <div className={style.text}>Turkusowa Wieża</div>
          </div>
-         <Burger />
+         <Burger openMenuHandler={props.openMenuHandler} />
       </nav>
    );
 }

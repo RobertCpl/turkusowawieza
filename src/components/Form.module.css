@@ -1,0 +1,49 @@
+.formInput {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+.label {
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+.input {
+   height: 56px;
+   padding: 1rem;
+   border: 1px solid rgb(202, 203, 203);
+   border-radius: 0.5rem;
+}
+.input::placeholder {
+   font-size: 1rem;
+   color: rgba(202, 203, 203, 1);
+}
+.contact {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contact .formInput {
+   width: 48%;
+}
+.textarea {
+   resize: none;
+   height: 170px;
+   padding: 1rem;
+   border: 1px solid rgb(202, 203, 203);
+   border-radius: 0.5rem;
+}
+.textarea::placeholder {
+   font-size: 1rem;
+   color: rgba(202, 203, 203, 1);
+}
+.checkbox {
+   align-self: flex-start;
+}
+.errorMsg {
+   padding: 0.5rem 0;
+   color: red;
+}

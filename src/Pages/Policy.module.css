@@ -47,6 +47,12 @@
 .textWraper {
    margin-bottom: 4rem;
 }
+.list {
+   font-size: 1rem;
+   color: #616264;
+   line-height: 32px;
+   text-align: left;
+}
 .listIn {
    margin-left: 1rem;
    list-style-type: lower-latin;

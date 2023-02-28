@@ -4,13 +4,9 @@
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
-   padding: 4rem 6rem;
+   padding: 2rem 4rem;
    background-color: white;
    border-radius: 1rem;
-
-   position: absolute;
-   top: 0;
-   left: 0;
 }
 .leftColumn {
    width: 50%;

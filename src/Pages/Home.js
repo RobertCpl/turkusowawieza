@@ -102,6 +102,7 @@ function Home() {
             color={"rgba(0, 179, 181, 0.07)"}
             title={"Jak działamy"}
             pad={windowsWidth > 768 ? "128px 12px" : "64px 12px"}
+            id={"actions"}
          >
             <TowerPostsList />
          </Section>

@@ -27,31 +27,29 @@ function TowerPost(props) {
    };
 
    return (
-      <div>
-         <div className="animation1">
-            {modalOpen ? (
-               <Modal title={title} content={content} img={img} closeModal={closeModalHandler} top={props.top} />
-            ) : null}
-            {!img.isLoaded ? (
-               <p>Loading</p>
-            ) : (
-               <div className={style.wraper}>
-                  <div className={style.leftColumn}>
-                     <div>
-                        <h3 className={style.title}>{title.rendered}</h3>
-                        <div className={style.text} dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
-                     </div>
-                     <Button title={"Dowiedź się wiecej"} click={openModalHandler} />
+      <>
+         {modalOpen ? (
+            <Modal title={title} content={content} img={img} closeModal={closeModalHandler} top={props.top} />
+         ) : null}
+         {!img.isLoaded ? (
+            <p>Loading</p>
+         ) : (
+            <div className={style.wraper}>
+               <div className={style.leftColumn}>
+                  <div>
+                     <h3 className={style.title}>{title.rendered}</h3>
+                     <div className={style.text} dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
                   </div>
-                  <div className={style.rightColumn}>
-                     <div className={style.photo}>
-                        <img src={img.datas.media_details.sizes.full.source_url} alt="" />
-                     </div>
+                  <Button title={"Dowiedź się wiecej"} click={openModalHandler} />
+               </div>
+               <div className={style.rightColumn}>
+                  <div className={style.photo}>
+                     <img src={img.datas.media_details.sizes.full.source_url} alt="" />
                   </div>
                </div>
-            )}
-         </div>
-      </div>
+            </div>
+         )}
+      </>
    );
 }
 

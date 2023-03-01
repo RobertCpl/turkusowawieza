@@ -1,5 +1,5 @@
 import style from "./Header.module.css";
-import tree from "./../assets/images/Tree.jpg";
+import tree from "./../assets/images/Tree.webp";
 import Button from "../components/Button";
 import ButtonSecondary from "./../components/ButtonSecondary";
 function Header() {

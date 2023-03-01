@@ -1,7 +1,7 @@
 .wraper {
    max-width: 1200px;
    margin: 0 auto;
-   padding-top: 128px;
+   padding: 128px 12px 0 12px;
 }
 .top {
    display: flex;

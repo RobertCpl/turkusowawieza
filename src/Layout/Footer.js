@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import instagram from "./../assets/images/instagram.svg";
 import fb from "./../assets/images/facebook.svg";
 import style from "./Footer.module.css";
-import earth from "./../assets/images/earth.jpg";
+import earth from "./../assets/images/earth.webp";
 
 function Footer() {
    return (

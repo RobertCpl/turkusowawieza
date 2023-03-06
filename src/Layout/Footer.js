@@ -3,6 +3,8 @@ import instagram from "./../assets/images/instagram.svg";
 import fb from "./../assets/images/facebook.svg";
 import style from "./Footer.module.css";
 import earth from "./../assets/images/earth.webp";
+import Cookie from "../components/Cookie";
+import { useState } from "react";
 
 function Footer() {
    return (
@@ -18,7 +20,7 @@ function Footer() {
                <a href="mailto: info@turkusowawieza.pl" className={style.email}>
                   info@turkusowawieza.pl
                </a>
-               <div className={style.copymail}>Adres email skopiowany</div>
+               {/* <div className={style.copymail}>Adres email skopiowany</div> */}
                <div className={style.address}>
                   Turkusowa Wieża - Centrum Spotkań
                   <span>ul. Romaszeskiego 23, Warszawa</span>
@@ -28,12 +30,16 @@ function Footer() {
          <div className={style.bottom}>
             <div className={style.left}>
                <div className={style.social}>
-                  <div className={style.instagram}>
-                     <img src={instagram} alt="instagram icon" />
-                  </div>
-                  <div className={style.facebook}>
-                     <img src={fb} alt="facebook icon" />
-                  </div>
+                  <a href="https://www.instagram.com/turkusowawieza/?igshid=YmMyMTA2M2Y%3D">
+                     <div className={style.instagram}>
+                        <img src={instagram} alt="instagram icon" />
+                     </div>
+                  </a>
+                  <a href="https://www.facebook.com/TurkusowaWieza">
+                     <div className={style.facebook}>
+                        <img src={fb} alt="facebook icon" />
+                     </div>
+                  </a>
                </div>
                <div className={style.copy}>&copy; Turkusowa Wieża 2023</div>
             </div>

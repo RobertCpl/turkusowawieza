@@ -20,8 +20,12 @@
 .logo_img img {
    width: 100%;
 }
+.link:visited {
+   color: #2c2e31;
+}
 .text {
    font-size: 1.25rem;
+   color: #2c2e31;
 }
 
 @media (max-width: 1024px) {

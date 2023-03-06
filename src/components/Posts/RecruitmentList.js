@@ -3,14 +3,16 @@ import arrowR from "./../../assets/images/arrowRight.svg";
 import style from "./RecruitmentList.module.css";
 import RecruitmentPost from "./RecruitmentPost";
 import Step from "./../Step";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
+
+const link = <Link to={"/"}>formularz zgłoszeniowy</Link>;
 
 const posts = [
    {
       id: 1,
       title: "Formularz zgłoszeniowy",
-      text: "Jeśli po zapoznaniu się z naszą stroną internetową jesteś zainteresowany zapisaniem dziecka do naszej szkoły, wypełnij formularz zgłoszeniowy.",
+      text: `Jeśli po zapoznaniu się z naszą stroną internetową jesteś zainteresowany zapisaniem dziecka do naszej szkoły, wypełnij formularz zgłoszeniowy`,
    },
    {
       id: 2,
